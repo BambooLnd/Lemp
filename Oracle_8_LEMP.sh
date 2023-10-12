@@ -17,6 +17,8 @@ dnf install -y wget git
 wget https://getcomposer.org/installer -O composer-installer.php
 php composer-installer.php --filename=composer --install-dir=/usr/bin
 
+dnf install -y certbot
+
 dnf -y install mariadb-server
 systemctl start mariadb
 systemctl enable mariadb
